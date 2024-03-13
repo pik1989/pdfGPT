@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="relative isolate overflow-hidden bg-white">
+        <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+            aria-hidden="true">
+            <defs>
+                <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="200" height="200" x="50%" y="-1"
+                    patternUnits="userSpaceOnUse">
+                    <path d="M.5 200V.5H200" fill="none" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+        </svg>
+        <div class="mx-auto  sm:h-screen w-screen flex flex-col sm:flex-row justify-center items-center px-6 pb-24 pt-10 sm:pb-32 lg:flex lg:px-20 lg:py-20">
+            <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl lg:flex-shrink-0 lg:pt-8">
+               <img src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1706986565/hqatxpsjdg3zeql20jfe.png" class="h-8 w-8 drop-shadow-2xl" alt="">
+                <!-- <h1 class="text-3xl font-semibold ">ZEP</h1> -->
+                 <div class="mt-24 sm:mt-32 lg:mt-4">
+                    
+                    <a href="#" class="inline-flex space-x-6">
+                        <span
+                            class="rounded-full bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 px-3 py-1 text-sm font-semibold leading-6 text-white ring-1 ring-inset ring-blue-600/10">GPT LangChain</span>
+                        <span class="inline-flex items-center space-x-1 text-sm font-medium leading-2 text-gray-600">
+                            
+                            <svg class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </span>
+                    </a>
+                    
+                </div>
+                <h1 class="mt-10 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">AI writing and analysis tools for businesses.</h1>
+                <p class="mt-6 text-lg leading-8 text-gray-600">Break free from writer's block and explore endless language possibilities.</p>
+                <form action="/process" method="post" enctype="multipart/form-data">
+                        <div class="mt-10 flex flex-col justify-start items-start sm:flex-row sm:items-center  gap-x-6">
+                    <button type="submit" 
+                        class=" my-2 bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 px-8 rounded-2xl py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Process</button>
+                        <input type="file" name="pdf_docs" id="pdf_docs" accept=".pdf" multiple required
+                         class="text-sm font-semibold leading-6 text-gray-900  border  py-2 px-4 rounded-2xl block w-full text-sm text-slate-500 border-l-green-300 border-t-blue-500/30 border-r-purple-600/40  border-b-purple-500/30
+      file:mr-4 file:py-2 file:px-4
+      file:rounded-full file:border-0
+      file:text-sm file:font-semibold
+      file:bg-blue-50 file:text-blue-400
+      hover:file:bg-blue-100" type="file">
+                        
+    </div>
+                    </form>
+            </div>
+            <div class="mx-auto mt-16 flex max-w-2xl sm:mt-24 lg:ml-10 lg:mr-0 lg:mt-0 lg:max-w-none lg:flex-none xl:ml-32">
+                <div class="max-w-3xl flex-none sm:max-w-5xl lg:max-w-none">
+                    <div
+                        class=" lg:-m-4 lg:rounded-2xl lg:p-4">
+                        <img src="https://res.cloudinary.com/dtsuvx8dz/image/upload/v1709048322/o3ad4w8hedswhwymbhr9.png"
+                            alt="App screenshot"
+                            class="sm:w-[23rem] w-2/3 sm:h-[28rem] sm:pl-0 pl-12 rounded-md drop-shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
