@@ -51,8 +51,8 @@ Before getting started, ensure that you have the following prerequisites install
 ### Contribution
 We welcome contributions to improve this project. If you have any suggestions, bug reports, or feature requests, please feel free to open an issue or submit a pull request.
 
-### License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Video
+[![Watch the video](https://github.com/pik1989/pdfGPT/assets/34673684/eb2ab5d1-0a0f-497e-a14d-9dedd81e2fe1)](https://youtu.be/gXLweo7oMWA)
 
 ### Acknowledgements
 - Mention any individuals or organizations you'd like to acknowledge for their contributions or support.
