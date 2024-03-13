@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Chat Interface</title>
+</head>
+
+<body>
+    <section>
+        <div>
+            <div class="flex flex-col justify-center items-center">
+                <h1 class="text-5xl py-2 font-bold text-transparent bg-clip-text bg-gradient-to-tr from-blue-700 via-blue-800 to-gray-900   drop-shadow-2xl underline decoration-double    ">Chat Interface</h1>
+                <div class="w-screen flex flex-col justify-evenly items-center py-8 px-4">
+
+                    <div class="pb-2 w-full sm:w-[50rem] border border-blue-500 mx-5">
+                        <h1 class="w-full py-2 px-3 bg-gradient-to-bl from-green-300 via-blue-500 to-purple-600 font-bold text-white">Ask a question</h1>
+                        {% if chat_history %}
+                        <ul class="py-4 px-3">
+                            {% for message in chat_history %}
+                            <li class="drop-shadow-2xl  bg-gradient-to-br from-green-300/30 via-blue-500/10 to-purple-600/20 py-3 px-4 rounded-md text-slate-600 font-semibold sm:overflow-visible overflow-hidden sm:text-base text-xs font-mono">
+                                {{ message.content }}
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% else %}
+                        <div class="w-full flex justify-center">
+                            <p class="border border-2 border-blue-500 text-blue-800 px-3 py-2 w-1/2 flex justify-center font-mono">No chat history yet.</p>
+                        </div>
+                        {% endif %}
+                        <form action="/chat" method="post">
+                            <div class="w-full flex flex-row justify-evenly">
+                                <input class="bg-blue-200 w-full mx-4 py-2 rounded-2xl text-white font-mono px-4 border border-2 border-black" placeholder="" type="text" name="user_question" id="user_question" required>
+                                <button class="px-7 mx-2 rounded-2xl bg-gradient-to-br from-green-300 via-blue-500 to-purple-600 text-white hover:bg-red-400" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
