@@ -1,0 +1,4 @@
+langchain_community==0.0.11
+langchain_openai==0.0.2
+flask==2.2.3
+PyPDF2==3.0.1
